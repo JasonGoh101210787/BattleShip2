@@ -6,9 +6,8 @@
       <Breakpoint file="C:\Users\jetix\Documents\GitHub\BattleShip2\src\GameController.cs" line="34" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\Model\AIHardPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip2 Status">
     <Files>
-      <File FileName="BattleShip2 Status" />
       <File FileName="src\DeploymentController.cs" Line="162" Column="13" />
       <File FileName="src\DiscoveryController.cs" Line="31" Column="4" />
       <File FileName="src\EndingGameController.cs" Line="44" Column="2" />
@@ -20,7 +19,8 @@
       <File FileName="src\GameController.cs" Line="17" Column="1" />
       <File FileName="src\Model\ResultOfAttack.cs" Line="1" Column="1" />
       <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="8" Column="14" />
+      <File FileName="BattleShip2 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />

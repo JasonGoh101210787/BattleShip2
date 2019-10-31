@@ -18,7 +18,7 @@ public static class GameResources
 		NewFont("Menu", "ffaccess.ttf", 8);
 	}
 
-	private static void LoadImages()
+	private static void LoadImages() 
 	{
 		//Backgrounds
 		NewImage("Menu", "main_page.jpg");
