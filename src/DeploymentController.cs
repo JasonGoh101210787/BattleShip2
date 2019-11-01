@@ -23,7 +23,7 @@ static class DeploymentController
 	private const int TOP_BUTTONS_HEIGHT = 46;
 	private const int PLAY_BUTTON_LEFT = 693;
 
-	private const int PLAY_BUTTON_WIDTH = 81;
+	private const int PLAY_BUTTON_WIDTH = 80;
 	private const int UP_DOWN_BUTTON_LEFT = 410;
 
 	private const int LEFT_RIGHT_BUTTON_LEFT = 350;
