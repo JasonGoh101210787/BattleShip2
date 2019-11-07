@@ -20,6 +20,7 @@
       <File FileName="src\Model\ResultOfAttack.cs" Line="1" Column="1" />
       <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIHardPlayer.cs" Line="8" Column="14" />
+      <File FileName="src\Model\TileView.cs" Line="1" Column="1" />
       <File FileName="BattleShip2 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
