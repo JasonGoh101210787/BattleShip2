@@ -28,6 +28,19 @@ public class SeaGrid : ISeaGrid
 	/// </summary>
 	public event EventHandler Changed;
 
+	public void Reset ()
+	{
+		_ShipsKilled = 0;
+		foreach (KeyValuePair<ShipName, Ship> s in _Ships) {
+			s.Value.Reset ();
+		}
+		for (int i = 0; (i <= (Width - 1)); i++) {
+			for (int j = 0; (j <= (Height - 1)); j++) {
+				_GameTiles [i, j].Shot = false;
+			}
+		}
+	}
+
 	/// <summary>
 	/// The width of the sea grid.
 	/// </summary>

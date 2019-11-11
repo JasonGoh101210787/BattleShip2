@@ -60,6 +60,13 @@ public static class GameController
 		_state.Push(GameState.ViewingMainMenu);
 	}
 
+
+	public static void Init ()
+	{
+		_state.Push (GameState.Quitting);
+		_state.Push (GameState.ViewingMainMenu);
+	}
+
 	/// <summary>
 	/// Starts a new game.
 	/// </summary>
@@ -73,7 +80,8 @@ public static class GameController
 
 		//Create the game
 		_theGame = new BattleShipsGame();
-
+		_theGame.AttackCompleted += new BattleShipsGame.AttackCompletedHandler (AttackCompleted);
+		_human = new Player (_theGame);
 		//create the players
 		switch (_aiSetting) {
 			case AIOption.Medium:
@@ -356,8 +364,8 @@ public static class GameController
 	/// <param name="newState">the new state of the game</param>
 	public static void SwitchState(GameState newState)
 	{
-		EndCurrentState();
-		AddNewState(newState);
+		GameController.EndCurrentState();
+		GameController.AddNewState(newState);
 	}
 
 	/// <summary>

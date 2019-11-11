@@ -32,6 +32,17 @@ public class Player : IEnumerable<Ship>
 		set { _game = value; }
 	}
 
+	public virtual void Reset ()
+	{
+		_shots = 0;
+		_hits = 0;
+		_misses = 0;
+		foreach (KeyValuePair<ShipName, Ship> s in _Ships) {
+			s.Value.Reset ();
+		}
+		_playerGrid.Reset ();
+	}
+
 	/// <summary>
 	/// Sets the grid of the enemy player
 	/// </summary>
@@ -43,7 +54,7 @@ public class Player : IEnumerable<Ship>
 	public Player(BattleShipsGame controller)
 	{
 		_game = controller;
-    _playerGrid = new SeaGrid(_Ships);
+    	_playerGrid = new SeaGrid(_Ships);
 
 		//for each ship add the ships name so the seagrid knows about them
 		foreach (ShipName name in Enum.GetValues(typeof(ShipName))) {

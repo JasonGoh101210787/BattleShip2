@@ -29,6 +29,16 @@ static class DiscoveryController
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			DoAttack();
 		}
+
+		Point2D mouse = SwinGame.MousePosition ();
+		if (SwinGame.MouseClicked (MouseButton.LeftButton) && mouse.X > UtilityFunctions.FIELD_LEFT + 340 && mouse.Y > UtilityFunctions.FIELD_TOP - 50 && mouse.X < UtilityFunctions.FIELD_LEFT + 340 + 80 && mouse.Y < UtilityFunctions.FIELD_TOP - 50 + 46) {
+			GameController.HumanPlayer.Reset ();
+			GameController.ComputerPlayer.Reset ();
+		}
+		if (SwinGame.KeyDown (KeyCode.vk_r)) {
+			GameController.HumanPlayer.Reset ();
+			GameController.ComputerPlayer.Reset ();
+		}
 	}
 
 	/// <summary>
@@ -68,6 +78,8 @@ static class DiscoveryController
 		} else {
 			UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, GameController.ComputerPlayer, false);
 		}
+
+		SwinGame.DrawBitmap (GameResources.GameImage ("ResetButton"), UtilityFunctions.FIELD_LEFT + 340, UtilityFunctions.FIELD_TOP - 50);
 
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();

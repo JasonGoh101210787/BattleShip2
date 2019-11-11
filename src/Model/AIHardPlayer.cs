@@ -97,6 +97,14 @@ public class AIHardPlayer : AIPlayer
 	{
 	}
 
+	public override void Reset ()
+	{
+		base.Reset ();
+		_CurrentState = AIStates.Searching;
+		_Targets = new Stack<Target> ();
+		_LastHit = new List<Target> ();
+	}
+
 	/// <summary>
 	/// GenerateCoords will call upon the right methods to generate the appropriate shooting
 	/// coordinates

@@ -60,10 +60,16 @@ public abstract class AIPlayer : Player
 		/// <param name="this">location 1</param>
 		/// <param name="other">location 2</param>
 		/// <returns>true if location 1 and location 2 are at the same spot</returns>
-		public static bool operator ==(Location @this, Location other)
+		public static bool operator == (Location left, Location right)
 		{
-			return !ReferenceEquals(@this, null) && !ReferenceEquals(other, null) && @this.Row == other.Row && @this.Column == other.Column;
-			//return @this != null && other != null && @this.Row == other.Row && @this.Column == other.Column;
+			if (object.ReferenceEquals (left, right)) {
+				return true;
+			}
+			if (object.ReferenceEquals (left, null) || object.ReferenceEquals (right, null)) {
+				return false;
+			}
+
+			return left.Row == right.Row && left.Column == right.Column;
 		}
 
 		/// <summary>
@@ -72,9 +78,19 @@ public abstract class AIPlayer : Player
 		/// <param name="this">location 1</param>
 		/// <param name="other">location 2</param>
 		/// <returns>true if location 1 and location 2 are not at the same spot</returns>
-		public static bool operator !=(Location @this, Location other)
+		public static bool operator != (Location left, Location right)
 		{
-			return ReferenceEquals(@this, null) || ReferenceEquals(other, null) || @this.Row != other.Row || @this.Column != other.Column;
+			return !(left == right);
+		}
+
+		public override bool Equals (object obj)
+		{
+			return this == obj as Location;
+		}
+
+		public override int GetHashCode ()
+		{
+			return base.GetHashCode ();
 		}
 	}
 
