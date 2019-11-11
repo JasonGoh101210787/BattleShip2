@@ -270,8 +270,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\images\main_page.jpg" />
-    <None Include="Resources\sounds\pirates.mp3" />
     <None Include="Resources\images\reset_button.png" />
+    <None Include="Resources\sounds\pirates.mp3" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />
