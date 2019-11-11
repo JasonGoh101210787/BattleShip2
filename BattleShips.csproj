@@ -239,9 +239,6 @@
     <None Include="Resources\sounds\hit.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\sounds\horrordrone.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Resources\sounds\lose.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -270,7 +267,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\images\main_page.jpg" />
-    <None Include="Resources\images\reset_button.png" />
     <None Include="Resources\sounds\pirates.mp3" />
   </ItemGroup>
   <Target Name="CopyFiles">
