@@ -11,9 +11,9 @@
       <File FileName="src\DeploymentController.cs" Line="36" Column="31" />
       <File FileName="src\DiscoveryController.cs" Line="82" Column="55" />
       <File FileName="src\EndingGameController.cs" Line="39" Column="20" />
-      <File FileName="src\UtilityFunctions.cs" Line="170" Column="11" />
-      <File FileName="src\MenuController.cs" Line="297" Column="32" />
-      <File FileName="src\HighScoreController.cs" Line="19" Column="34" />
+      <File FileName="src\UtilityFunctions.cs" Line="1" Column="1" />
+      <File FileName="src\MenuController.cs" Line="1" Column="1" />
+      <File FileName="src\HighScoreController.cs" Line="27" Column="3" />
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
       <File FileName="src\GameLogic.cs" Line="1" Column="1" />
       <File FileName="src\GameController.cs" Line="1" Column="1" />
@@ -31,7 +31,7 @@
       <File FileName="src\Model\SeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
       <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
-      <File FileName="src\Model\ShipName.cs" Line="1" Column="1" />
+      <File FileName="src\Model\ShipName.cs" Line="16" Column="16" />
       <File FileName="src\Model\Tile.cs" Line="1" Column="1" />
       <File FileName="src\GameState.cs" Line="1" Column="1" />
       <File FileName="BattleShip2 Status" />

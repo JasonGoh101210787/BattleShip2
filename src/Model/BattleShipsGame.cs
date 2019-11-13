@@ -98,6 +98,10 @@ public class BattleShipsGame
 			_playerIndex = otherPlayer;
 		}
 
+		if (newAttack.Value == ResultOfAttack.Hit) {
+			_playerIndex = otherPlayer;
+		}
+
 		return newAttack;
 	}
 }

@@ -262,6 +262,11 @@ public static class GameController
 				if (object.ReferenceEquals(_theGame.Player, ComputerPlayer))
 					AIAttack();
 				break;
+			case ResultOfAttack.Hit:
+				if (object.ReferenceEquals (_theGame.Player, ComputerPlayer))
+					AIAttack ();
+				break;
+
 			case ResultOfAttack.GameOver:
 				SwitchState(GameState.EndingGame);
 				break;
@@ -291,6 +296,9 @@ public static class GameController
 			case GameState.AlteringSettings:
 				MenuController.HandleSetupMenuInput();
 				break;
+		case GameState.AlteringMusic:
+			MenuController.HandleMusicMenuInput ();
+			break;
 			case GameState.Deploying:
 				DeploymentController.HandleDeploymentInput();
 				break;
@@ -328,6 +336,9 @@ public static class GameController
 			case GameState.AlteringSettings:
 				MenuController.DrawSettings();
 				break;
+		case GameState.AlteringMusic:
+			MenuController.DrawMusicSettings ();
+			break;
 			case GameState.Deploying:
 				DeploymentController.DrawDeployment();
 				break;
