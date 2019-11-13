@@ -25,7 +25,11 @@ public static class GameResources
 		NewImage("Discovery", "discover.jpg");
 		NewImage("Deploy", "deploy.jpg");
 
+		// backbutton
+		NewImage ("BackButton", "back_button.png");
+
 		//Deployment
+		NewImage ("hints", "hint-icon.png");
 		NewImage("LeftRightButton", "deploy_dir_button_horiz.png");
 		NewImage("UpDownButton", "deploy_dir_button_vert.png");
 		NewImage("SelectedShip", "deploy_button_hl.png");

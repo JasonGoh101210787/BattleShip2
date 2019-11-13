@@ -51,6 +51,8 @@ public static class GameController
 		get { return _ai; }
 	}
 
+
+	// PushStatesInStack()
 	static GameController()
 	{
 		//bottom state will be quitting. If player exits main menu then the game is over
@@ -200,6 +202,13 @@ public static class GameController
 				Audio.PlaySoundEffect(GameResources.GameSound("Error"));
 				break;
 		}
+	}
+
+
+
+	internal static AIOption getDiffuculty ()
+	{
+		throw new NotImplementedException ();
 	}
 
 	/// <summary>
