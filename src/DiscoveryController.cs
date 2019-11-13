@@ -13,7 +13,7 @@ using SwinGameSDK;
 static class DiscoveryController
 {
 
-	public static int hintsBtnLeft = 700;
+	public static int hintsBtnLeft = 300;
 	public static int hintsBtnTop = 20;
 	public static int hintsBtnWidth = 64;
 	public static int hintsBtnHeight = 64;
@@ -23,7 +23,6 @@ static class DiscoveryController
 
 	private const int BACK_BUTTON_X = 693;
 	private const int BACK_BUTTON_Y = 72;
-
 	private const int BACK_BUTTON_HEIGHT = 46;
 	private const int BACK_BUTTON_WIDTH = 80;
 
