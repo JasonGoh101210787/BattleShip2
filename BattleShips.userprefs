@@ -8,7 +8,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip2 Status">
     <Files>
-      <File FileName="src\DeploymentController.cs" Line="16" Column="24" />
+      <File FileName="src\DeploymentController.cs" Line="1" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
       <File FileName="src\EndingGameController.cs" Line="39" Column="20" />
       <File FileName="src\UtilityFunctions.cs" Line="1" Column="1" />

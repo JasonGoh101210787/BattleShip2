@@ -34,7 +34,7 @@ static class DeploymentController
 	private const int DIR_BUTTONS_WIDTH = 47;
 
 	private const int BACK_BUTTON_HEIGHT = 20;
-	private const int BACK_BUTTON_LEFT = 700;
+	private const int BACK_BUTTON_LEFT = 30;
 
 	private const int TEXT_OFFSET = 5;
 	private static Direction _currentDirection = Direction.UpDown;

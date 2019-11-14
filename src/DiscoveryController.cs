@@ -13,16 +13,16 @@ using SwinGameSDK;
 static class DiscoveryController
 {
 
-	public static int hintsBtnLeft = 300;
-	public static int hintsBtnTop = 20;
+	public static int hintsBtnLeft = 340;
+	public static int hintsBtnTop = 70;
 	public static int hintsBtnWidth = 64;
 	public static int hintsBtnHeight = 64;
 	public static int hintY = 0;
 	public static int hintX = 0;
 	public static bool hasHint = false;
 
-	private const int BACK_BUTTON_X = 693;
-	private const int BACK_BUTTON_Y = 72;
+	private const int BACK_BUTTON_X = 50;
+	private const int BACK_BUTTON_Y = 20;
 	private const int BACK_BUTTON_HEIGHT = 46;
 	private const int BACK_BUTTON_WIDTH = 80;
 
