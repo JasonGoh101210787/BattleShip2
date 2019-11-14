@@ -42,8 +42,8 @@ static class DiscoveryController
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			if (UtilityFunctions.IsMouseInRectangle (hintsBtnLeft, hintsBtnTop, hintsBtnWidth, hintsBtnHeight)) {
 				List<int> hints = GameController.ComputerPlayer.getHint ();
-				Console.WriteLine (hints [0]);
 				Console.WriteLine (hints [1]);
+
 
 				hintY = UtilityFunctions.FIELD_LEFT + hints [1] * (UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP);
 				hintX = UtilityFunctions.FIELD_TOP + hints [0] * (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP);

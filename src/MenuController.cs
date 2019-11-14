@@ -32,7 +32,7 @@ static class MenuController
 		},
 		new string[] {
 			"RETURN",
-			"SURRENDER",
+			"GIVE UP",
 			"QUIT"
 		},
 		new string[] {
@@ -80,7 +80,7 @@ static class MenuController
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
 
 	private const int GAME_MENU_QUIT_BUTTON = 2;
-	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(1, 255, 255, 255);
+	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(255, 255, 255, 255);
 
 	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
 	/// <summary>

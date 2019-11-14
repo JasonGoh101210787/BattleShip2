@@ -11,7 +11,7 @@
       <File FileName="src\DeploymentController.cs" Line="1" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
       <File FileName="src\EndingGameController.cs" Line="39" Column="20" />
-      <File FileName="src\UtilityFunctions.cs" Line="1" Column="1" />
+      <File FileName="src\UtilityFunctions.cs" Line="235" Column="35" />
       <File FileName="src\MenuController.cs" Line="1" Column="1" />
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
