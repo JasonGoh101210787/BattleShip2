@@ -86,6 +86,9 @@ public static class GameController
 		_human = new Player (_theGame);
 		//create the players
 		switch (_aiSetting) {
+			case AIOption.Easy:
+				_ai = new AIEasyPlayer(_theGame);
+				break;
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
 				break;
@@ -206,7 +209,7 @@ public static class GameController
 
 
 
-	internal static AIOption getDiffuculty ()
+	internal static AIOption getDifficulty ()
 	{
 		throw new NotImplementedException ();
 	}

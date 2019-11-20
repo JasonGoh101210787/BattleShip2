@@ -17,6 +17,7 @@ public static class GameResources
 		NewFont("CourierSmall", "cour.ttf", 8);
 		NewFont("Menu", "Caribbean.ttf", 10);
 		NewFont ("ScoreFont", "Caribbean.ttf", 15);
+		NewFont ("EndGame", "Caribbean.ttf", 80);
 	}
 
 	private static void LoadImages() 
