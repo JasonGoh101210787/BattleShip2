@@ -28,6 +28,7 @@ static class MenuController
 			"SETUP",
 			"SCORES",
 			"MUSIC",
+			"FULLSCRN",
 			"QUIT"
 		},
 		new string[] {
@@ -47,7 +48,7 @@ static class MenuController
 
 	};
 	private const int MENU_TOP = 550;
-	private const int MENU_LEFT = 130;
+	private const int MENU_LEFT = 55;
 	private const int MENU_GAP = 50;
 	private const int BUTTON_WIDTH = 75;
 	private const int BUTTON_HEIGHT = 15;
@@ -66,7 +67,7 @@ static class MenuController
 
 	private const int MAIN_MENU_MUSIC_BUTTON = 3;
 
-	private const int MAIN_MENU_QUIT_BUTTON = 4;
+	private const int MAIN_MENU_QUIT_BUTTON = 5;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
@@ -75,6 +76,7 @@ static class MenuController
 
 	private const int MUSIC_MENU_ON_BUTTON = 0;
 	private const int MUSIC_MENU_OFF_BUTTON = 1;
+	private const int MAIN_MENU_FULLSCREEN_BUTTON = 4;
 
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
@@ -319,6 +321,9 @@ static class MenuController
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();
 				break;
+			case MAIN_MENU_FULLSCREEN_BUTTON:
+			SwinGame.ToggleFullScreen ();
+			break;
 		}
 	}
 
